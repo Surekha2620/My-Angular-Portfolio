@@ -1,0 +1,92 @@
+header{
+    background: #1e3a8a;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    position:sticky;
+    top:0;
+    z-index: 1000;
+}
+
+.left{
+    height:100px;
+    width: 10%;
+    display: flex;
+    flex-direction: column;  
+}
+
+.left img{
+    margin-left: 10px;
+    margin-top: 5px;
+}  
+
+.left p{
+    margin-top: 2px ;
+    color: white;
+    font-weight: bold;
+}
+
+
+.middle{
+    width: 65%;
+    margin-top: 10px;
+}
+
+.middle ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.middle li{
+    margin-left: 30px;
+    font-weight: bold;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.right{
+    width: 25%;
+    height:100px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    
+}
+
+.right .contact{
+    color:black;
+    height: 30px;
+    width: 40%;
+    border-radius: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #facc15;
+    transition: background 0.3s ease;
+}
+
+middle li:hover {
+    color: #facc15; 
+}
+
+.right .contact:hover {
+   background-color: #ffe066;
+   color: #1f2937;
+}
+
+.middle a {
+    color: white;
+    text-decoration: none;
+}
+
+.middle a:visited {
+    color: white;
+}
+
+.middle a:hover {
+    color: #facc15;
+}
+
