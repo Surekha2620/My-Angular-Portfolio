@@ -90,3 +90,38 @@ middle li:hover {
     color: #facc15;
 }
 
+/* Hide hamburger by default */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .middle ul {
+        display: none; /* Hide menu on mobile by default */
+        flex-direction: column;
+        background: #1e3a8a;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .middle ul.show {
+        display: flex; /* Show when toggled */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on mobile */
+    }
+
+    .right {
+        display: none; /* Hide Contact button on mobile for simplicity */
+    }
+}
+
